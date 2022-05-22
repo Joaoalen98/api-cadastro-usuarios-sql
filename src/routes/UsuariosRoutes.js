@@ -9,7 +9,8 @@ usuariosRouter
     })
     .get("/usuarios", UsuarioController.listarUsuarios)
     .get("/usuarios/:id", UsuarioController.listarUsuarioPorId)
-    .post("/cadastro", UsuarioController.criarUsuario)
+    .post("/usuarios", UsuarioController.criarUsuario)
     .post("/usuarios/:id", UsuarioController.atualizarUsuario)
+    .delete("/usuarios/:id", UsuarioController.deletarUsuarioPorId)
 
 export default usuariosRouter
