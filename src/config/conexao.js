@@ -7,7 +7,7 @@ const sequelize = new Sequelize(
     process.env.USER_PASSWORD,
     {
         host: process.env.HOST,
-        dialect: "mysql"
+        dialect: "mysql" // Exemplo para conexão em banco de dados MySQL. Pode ser modificado para uso com SQL Server, PostgreSQL, etc
     }
 );
 
